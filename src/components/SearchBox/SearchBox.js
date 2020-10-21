@@ -1,4 +1,4 @@
-esliimport React from 'react'
+import React from 'react'
 import InputSearch from '../InputSearch'
 import styles from './SearchBox.module.sass'
 
