@@ -1,12 +1,12 @@
-import React from 'react';
-import styles from './Container.module.sass';
+import React from 'react'
+import styles from './Container.module.sass'
 
-function Container(props) {
-    return (<div className={styles.main} style={props.style}>{props.children}</div>)
+function Container (props) {
+  return (<div className={styles.main} style={props.style}>{props.children}</div>)
 }
 
 Container.defaultProps = {
-    style: {}
+  style: {}
 }
 
-export default Container;
+export default Container
