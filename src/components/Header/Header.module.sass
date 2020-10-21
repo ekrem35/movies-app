@@ -1,14 +1,12 @@
-@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Fredoka+One&display=swap"
-$fonts: "Fredoka One"
-$labelFont: "Baloo 2"
-$yellowColor: #F5C518
+@import '../../assest/styles/colors' 
+@import '../../assest/styles/fonts' 
 
 .headerContainer 
     height: 100px
     background-color: white
     display: flex
     align-items: center
-    font-family: $fonts
+    font-family: $logoFont
     justify-content: space-between
 
 .logoAndMenu
@@ -22,7 +20,7 @@ $yellowColor: #F5C518
     color: $yellowColor
 
 .menu > ul
-    font-family: $labelFont
+    font-family: $font
     list-style: none
 
 .menu > ul > li 
