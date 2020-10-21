@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.sass'
 import Container from '../Container'
 
-function Header({ rightComponent }) {
+export default function Header({ rightComponent }) {
     return (
         <Container>
             <div className={styles.headerContainer}>
@@ -24,5 +24,3 @@ function Header({ rightComponent }) {
 Header.defaultProps = {
     rightComponent: null
 }
-
-export default Header;
