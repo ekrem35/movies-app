@@ -1,4 +1,36 @@
-.container 
-    width: 300px
-    background-color: aqua
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Fredoka+One&display=swap"
+$fonts: "Fredoka One"
+$labelFont: "Baloo 2"
+$yellowColor: #F5C518
 
+.headerContainer 
+    height: 100px
+    background-color: white
+    display: flex
+    align-items: center
+    font-family: $fonts
+    justify-content: space-between
+
+.logoAndMenu
+    display: flex
+    align-items: center
+
+.label
+    font-weight: bold    
+
+.yellow 
+    color: $yellowColor
+
+.menu > ul
+    font-family: $labelFont
+    list-style: none
+
+.menu > ul > li 
+    float: left
+    margin: 0 20px
+
+.menu > ul > li:hover
+    color: $yellowColor
+    cursor: pointer
+
+.rightComponent

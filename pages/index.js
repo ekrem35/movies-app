@@ -4,8 +4,8 @@ import Container from '../src/components/Container'
 
 export default function Home() {
   return (
-    <Container>
-      <Header />
-    </Container>
+    <>
+      <Header rightComponent={<input type="text" />} />
+    </>
   )
 }

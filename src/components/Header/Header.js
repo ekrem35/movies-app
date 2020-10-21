@@ -1,12 +1,28 @@
 import React from 'react';
 import styles from './Header.module.sass'
+import Container from '../Container'
 
-function Header() {
+function Header({ rightComponent }) {
     return (
-        <div className={styles.container}>
-            <h1>Header</h1>
-        </div>
+        <Container>
+            <div className={styles.headerContainer}>
+                <div className={styles.logoAndMenu}>
+                    <h1 className={styles.label}>Movie<b className={styles.yellow}>UP</b></h1>
+                    <div className={styles.menu}>
+                        <ul>
+                            <li>Home</li>
+                            <li>Favorites</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.rightComponent}>{rightComponent}</div>
+            </div>
+        </Container>
     )
+}
+
+Header.defaultProps = {
+    rightComponent: null
 }
 
 export default Header;
