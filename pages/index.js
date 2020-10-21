@@ -1,11 +1,3 @@
-import Head from 'next/head'
-import Header from '../src/components/Header'
-import Container from '../src/components/Container'
+import Home from './Home'
 
-export default function Home() {
-  return (
-    <>
-      <Header rightComponent={<input type="text" />} />
-    </>
-  )
-}
+export default Home
